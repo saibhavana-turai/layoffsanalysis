@@ -9,8 +9,8 @@ st.set_page_config(page_title="🌍 Global Layoff Trend Dashboard", layout="wide
 
 # Load data
 try:
-    df = pd.read_csv("../reports/cleaned_layoffs.csv")
-    summary = pd.read_csv("../reports/summary_insights.csv")
+    df = pd.read_csv("reports/cleaned_layoffs.csv")
+    summary = pd.read_csv("reports/summary_insights.csv")
 except FileNotFoundError:
     st.error("⚠️ Required files not found! Please run the analysis notebooks first.")
     st.stop()
